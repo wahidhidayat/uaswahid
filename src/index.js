@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './containers/pages/app';
 import * as serviceWorker from './serviceWorker';
+import firebase from './config/firebase';
+import { createStore } from 'redux';
+import 'bootstrap/dist/css/bootstrap.min.css';
+console.log('config firebase ==> ',firebase);
+
 
 ReactDOM.render(
   <React.StrictMode>
